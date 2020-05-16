@@ -1,0 +1,15 @@
+let $GOPATH=getcwd()
+let $GOBIN='/home/blb/go/bin'
+let g:go_fmt_command = "goimports"
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_echo_command_info = 1
+let g:go_list_type = "quickfix"
+let g:go_test_show_name = 1
+let g:go_addtags_transform = "camelcase"
