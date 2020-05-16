@@ -99,7 +99,7 @@ call plug#end()
 	:	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
 	:augroup END
 	:augroup startUp
-	:	autocmd VimEnter * call Init()
+	:	autocmd VimEnter * call Startup()
 	:augroup END
 
 " Change test coverage color
