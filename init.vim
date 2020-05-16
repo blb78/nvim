@@ -81,11 +81,6 @@ call plug#end()
 	let mapleader = ','
 	let maplocalleader = 'ù'
 
-" Abbreviations
-	inoreabbrev reutrn return
-	inoreabbrev reutrn return
-	inoreabbrev retun return
-	inoreabbrev rt return
 " Events
 	:augroup cleanFile
 	:	" save on leaving
