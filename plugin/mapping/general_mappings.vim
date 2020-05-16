@@ -1,12 +1,9 @@
+" necessary for <SPACE> as mapleader
+nnoremap <SPACE> <Nop>
+
 inoremap { {}<Left>
 inoremap (( ()
-" list buffers
-nnoremap gb :ls<CR>:b<Space>
-" fzf list buffers
-nnoremap _ :Buffers<cr>
-" fzf list marks
-nnoremap <localleader>m :Marks<cr>
-nnoremap <localleader><localleader>a 'A
+
 " disable arrow keys in Escape mode
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -37,8 +34,6 @@ nnoremap <leader>v :vsplit<cr>
 nnoremap <leader>h :split<cr>
 " close window
 nnoremap <leader>q :close<cr>
-" Center the screen quickly
-nnoremap <space> zz
 " These mappings will make it so that going to the next one in a search will center on the line it's found in.
 nnoremap n nzzzv
 nnoremap N Nzzzv

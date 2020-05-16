@@ -78,7 +78,7 @@ call plug#end()
 	%retab!								" Retabulate the whole file
 	syntax on					  " Allow vim to set a custom font or color for a word
 	filetype plugin indent on
-	let mapleader = ','
+	let mapleader = ' '
 	let maplocalleader = 'ù'
 
 " Events
