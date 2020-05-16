@@ -82,19 +82,20 @@ call plug#end()
 	let maplocalleader = 'ù'
 
 " Events
+	:augroup startUp
+	:	autocmd VimEnter * call Startup()
+	:augroup END
 	:augroup cleanFile
 	:	" save on leaving
 	:	autocmd BufLeave * silent! :wa
 	:	" remove whitespace
 	:	autocmd BufWritePre * :%s/\s\+$//e
+	:	autocmd! bufwritepost init.vim source %
 	:augroup END
 	:augroup numberColorToggle
 	:	autocmd!
 	:	autocmd InsertEnter * highlight LineNr ctermbg=magenta guifg=#B48EAD
 	:	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
-	:augroup END
-	:augroup startUp
-	:	autocmd VimEnter * call Startup()
 	:augroup END
 
 " Change test coverage color
