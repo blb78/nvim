@@ -1,3 +1,25 @@
+nnoremap mà m0
+nnoremap m& m1
+nnoremap mé m2
+nnoremap m" m3
+nnoremap m' m4
+nnoremap m( m5
+nnoremap m- m6
+nnoremap mè m7
+nnoremap m_ m8
+nnoremap mç m9
+
+nnoremap <localleader>à '0
+nnoremap <localleader>& '1
+nnoremap <localleader>é '2
+nnoremap <localleader>" '3
+nnoremap <localleader>' '4
+nnoremap <localleader>( '5
+nnoremap <localleader>- '6
+nnoremap <localleader>è '7
+nnoremap <localleader>_ '8
+nnoremap <localleader>ç '9
+
 nnoremap <localleader>a 'a
 nnoremap <localleader>b 'b
 nnoremap <localleader>c 'c
