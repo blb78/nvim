@@ -98,6 +98,7 @@ call plug#end()
 	:	autocmd InsertEnter * highlight LineNr ctermbg=magenta guifg=#B48EAD
 	:	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
 	:augroup END
+
 " Change test coverage color
 " Must be set at the end of vimrc
 hi! def		 goCoverageCovered	  ctermfg=cyan	guibg=#485962

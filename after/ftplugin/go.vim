@@ -14,6 +14,3 @@ nmap <leader>gdv <Plug>(go-def-vertical)
 nmap <leader>gdh <Plug>(go-def-split)
 nmap <leader>gD <Plug>(go-doc)
 nmap <leader>gDv <Plug>(go-doc-vertical)
-
-let g:darkside_bop = get(g:, 'darkside_bop', '^\w.*$')
-let g:darkside_eop = get(g:, 'darkside_eop', '^.$')
