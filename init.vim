@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 		Plug 'junegunn/fzf.vim'
 		Plug 'junegunn/goyo.vim', {'for':'markdown'}
 		Plug 'blb78/limelight.vim', { 'on': 'Limelight' }
+		Plug 'blb78/darkside.vim', { 'on': 'Darkside' }
 		" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		" Plug 'deoplete-plugins/deoplete-go', {'for':'go', 'do': 'make'}
 	" Linting code
@@ -97,7 +98,6 @@ call plug#end()
 	:	autocmd InsertEnter * highlight LineNr ctermbg=magenta guifg=#B48EAD
 	:	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
 	:augroup END
-
 " Change test coverage color
 " Must be set at the end of vimrc
 hi! def		 goCoverageCovered	  ctermfg=cyan	guibg=#485962
