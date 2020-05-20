@@ -1,7 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 	" General
-		Plug 'vim-airline/vim-airline'
-		Plug 'vim-airline/vim-airline-themes'
+		Plug 'itchyny/lightline.vim'
+		" Plug 'vim-airline/vim-airline'
+		" Plug 'vim-airline/vim-airline-themes'
 		Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 		Plug 'junegunn/fzf.vim'
 		Plug 'junegunn/goyo.vim', {'for':'markdown'}
@@ -93,11 +94,11 @@ call plug#end()
 	:	autocmd BufWritePre * :%s/\s\+$//e
 	:	autocmd! bufwritepost init.vim source %
 	:augroup END
-	:augroup numberColorToggle
-	:	autocmd!
-	:	autocmd InsertEnter * highlight LineNr ctermbg=magenta guifg=#B48EAD
-	:	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
-	:augroup END
+	" :augroup numberColorToggle
+	" :	autocmd!
+	" :	autocmd InsertEnter * highlight LineNr ctermbg=magenta guifg=#B48EAD
+	" :	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
+	" :augroup END
 
 " Change test coverage color
 " Must be set at the end of vimrc
