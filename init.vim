@@ -1,8 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 	" General
 		Plug 'itchyny/lightline.vim'
-		" Plug 'vim-airline/vim-airline'
-		" Plug 'vim-airline/vim-airline-themes'
 		Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 		Plug 'junegunn/fzf.vim'
 		Plug 'junegunn/goyo.vim', {'for':'markdown'}
