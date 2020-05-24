@@ -3,7 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 		Plug 'itchyny/lightline.vim'
 		Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 		Plug 'junegunn/fzf.vim'
-		Plug 'junegunn/goyo.vim', {'for':'markdown'}
+		Plug 'junegunn/goyo.vim', {'on':'Goyo'}
 		Plug 'blb78/limelight.vim', { 'on': 'Limelight' }
 		Plug 'blb78/darkside.vim', { 'on': 'Darkside' }
 		" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -34,6 +34,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 		Plug 'storyn26383/vim-vue'						" Vuejs syntax highlighting
 	" Theme
 		Plug 'blb78/nord-vim'
+		Plug 'romainl/flattened'
 call plug#end()
 
 "  Basic settings
@@ -90,15 +91,10 @@ call plug#end()
 	:	autocmd BufLeave * silent! :wa
 	:	" remove whitespace
 	:	autocmd BufWritePre * :%s/\s\+$//e
-	:	autocmd! bufwritepost init.vim source %
+	:	autocmd! bufwritepost init.vim nested source %
 	:augroup END
 	" :augroup numberColorToggle
 	" :	autocmd!
 	" :	autocmd InsertEnter * highlight LineNr ctermbg=magenta guifg=#B48EAD
 	" :	autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
 	" :augroup END
-
-" Change test coverage color
-" Must be set at the end of vimrc
-hi! def		 goCoverageCovered	  ctermfg=cyan	guibg=#485962
-hi! def		 goCoverageUncover	  ctermfg=red	guibg=#8A515B

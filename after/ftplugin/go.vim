@@ -14,3 +14,6 @@ nmap <leader>gdv <Plug>(go-def-vertical)
 nmap <leader>gdh <Plug>(go-def-split)
 nmap <leader>gD <Plug>(go-doc)
 nmap <leader>gDv <Plug>(go-doc-vertical)
+hi! def		 goCoverageCovered	  ctermfg=cyan	guibg=#485962
+hi! def		 goCoverageUncover	  ctermfg=red	guibg=#8A515B
+
