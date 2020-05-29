@@ -5,7 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 		Plug 'junegunn/fzf.vim'
 		Plug 'junegunn/goyo.vim', {'on':'Goyo'}
 		Plug 'blb78/limelight.vim', { 'on': 'Limelight' }
-		Plug 'blb78/darkside.vim', { 'on': 'Darkside' }
+		Plug 'blb78/useless.vim', { 'on': 'Useless' }
 		" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		" Plug 'deoplete-plugins/deoplete-go', {'for':'go', 'do': 'make'}
 	" Linting code
