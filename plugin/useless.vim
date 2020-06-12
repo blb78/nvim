@@ -16,4 +16,4 @@ let g:useful_groups = {
 let g:useful_filetypes = {'go':{
 			\'boundary_start':'^\w.*$',
 			\'boundary_end':'\(^.$\|func.*{.*}$\)',
-			\'stay_useful':1}}
+			\'stay_useful':1,'hl_tested_func':1}}
