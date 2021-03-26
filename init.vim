@@ -6,7 +6,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 		Plug 'junegunn/goyo.vim', {'on':'Goyo'}
 		Plug 'blb78/limelight.vim', { 'on': 'Limelight' }
 		Plug 'blb78/useless.vim', { 'on': 'Useless' }
-		Plug 'neoclide/coc.nvim', {'branch': 'release'}
 		" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		" Plug 'deoplete-plugins/deoplete-go', {'for':'go', 'do': 'make'}
 	" Linting code

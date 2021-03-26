@@ -1,4 +1,3 @@
-let $GOPATH=getcwd()
 let $GOBIN='/home/blb/go/bin'
 let g:go_fmt_command = "goimports"
 let g:go_highlight_types = 1
